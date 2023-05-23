@@ -11,10 +11,9 @@
             border-color: black;
             border-width: 5px;
             border-style: dashed;
-            margin-left: 800px;
-            margin-right: 800px;
             text-align: center;
             background-color: grey;
+            padding-bottom: 25px;
         }
         #list {
             list-style-position: inside;
@@ -28,7 +27,24 @@
 
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
-    </style>
+        #aboutMe {
+            text-shadow: 10px 10px rgb(196, 185, 185);
+            text-align: center;
+            text-align: center;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black;
+            border-radius: 0px 0px 100px 100px;
+            background-color: grey;
+        }
+        @media screen and (max-width: 400px) {
+      #cImage {
+        float: none;
+        max-width: none;
+        width: 25%;
+      }
+    }
+    </style> <!--add left and right margins at 800px in #activities after project is graded-->
 </head>
 
 <body>
@@ -39,11 +55,18 @@
         <li> <a href="BlogTemplate1\Blog1.html">Blog Template</a> </li>
         <li> <a href="gamefiles/game.html">My Game (Get To School)</a> </li>
         <li> <a href="Formbar.html">Formbar Commands</a> </li>
-    
+        <li> <a href="pong.html">Pong Game!</a></li>
         <li> <a href="https://yancharkin.github.io/SpelunkyClassicHDhtml5/">Spelunky HTML</a> </li>
+        <li> <a href="pp2.html">Project Second Page</a></li>
         <br>
     </ul>
    </div>
+   <div id="aboutMe"> <!--remove this div and all inside when project is graded-->
+        <p>
+            My name is Connor and I have been learning coding in Mr.Smith's programming class. I have learened the basics of html and have started to look into python and javascript. I made a game in RPG maker whihc has helped me to understand the basics of python easier. 
+        </p>
+        <img src="Images\Code.org_logo.svg.png" style="max-width:500px;height:auto;" id="cImage">
+    </div>
     </body>
 
 </html>
